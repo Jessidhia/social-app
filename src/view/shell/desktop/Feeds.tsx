@@ -48,6 +48,9 @@ export function DesktopFeeds() {
             onPress={() => {
               setSelectedFeed(feed)
               navigation.navigate('Home')
+              if (feed === selectedFeed) {
+                window.scrollTo(0, 0)
+              }
             }}
           />
         )
